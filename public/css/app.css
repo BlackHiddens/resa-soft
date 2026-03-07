@@ -1,0 +1,150 @@
+:root {
+    --public-bg: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+    --admin-bg: #f2f5f9;
+    --brand-ink: #12344d;
+    --brand-accent: #0078d4;
+    --brand-accent-dark: #005ea6;
+    --card-radius: 1rem;
+}
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.public-body {
+    background: var(--public-bg);
+    color: #1f2937;
+}
+
+.admin-body {
+    background: var(--admin-bg);
+    color: #1f2937;
+}
+
+.public-nav {
+    background: linear-gradient(90deg, #12344d 0%, #1f4f70 100%);
+}
+
+.admin-nav {
+    background: linear-gradient(90deg, #1f2937 0%, #334155 100%);
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.btn-admin-primary,
+.btn-public-primary {
+    background: var(--brand-accent);
+    border-color: var(--brand-accent);
+    color: #fff;
+}
+
+.btn-admin-primary:hover,
+.btn-public-primary:hover {
+    background: var(--brand-accent-dark);
+    border-color: var(--brand-accent-dark);
+    color: #fff;
+}
+
+.card,
+.stat-card,
+.slot-card,
+.game-card {
+    border-radius: var(--card-radius);
+}
+
+.admin-login-card {
+    border-top: 4px solid var(--brand-accent);
+}
+
+.stat-card {
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    padding: 1rem;
+}
+
+.stat-label {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.stat-value {
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+
+.hero-card {
+    background: linear-gradient(120deg, #12344d 0%, #1f4f70 60%, #2b6e94 100%);
+    color: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 20px 35px rgba(18, 52, 77, 0.2);
+}
+
+.game-card {
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+}
+
+.slot-card {
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    padding: 1rem;
+    height: 100%;
+}
+
+.slot-card.member {
+    border-left: 4px solid #0d6efd;
+}
+
+.slot-card.own-gear {
+    border-left: 4px solid #16a34a;
+}
+
+.slot-card.rental {
+    border-left: 4px solid #f59e0b;
+}
+
+.availability-pill {
+    border-radius: 999px;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.65rem;
+}
+
+.rare {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.table td,
+.table th {
+    white-space: nowrap;
+}
+
+.badge-soft {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.public-form-card {
+    border: 0;
+    box-shadow: 0 18px 30px rgba(15, 23, 42, 0.08);
+}
+
+@media (max-width: 767px) {
+    .hero-card {
+        border-radius: 1rem;
+    }
+
+    .table td,
+    .table th {
+        white-space: normal;
+    }
+}
