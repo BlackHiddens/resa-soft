@@ -48,8 +48,8 @@ class ReservationController extends Controller
                 $reservation = Reservation::query()->create([
                     'game_id' => $lockedGame->id,
                     'full_name' => $validated['full_name'],
-                    'phone' => $validated['phone'],
-                    'email' => $validated['email'] ?? null,
+                    'phone' => '-',
+                    'email' => null,
                     'reservation_type' => $validated['reservation_type'],
                     'unit_price' => $unitPrice,
                     'quantity' => $quantity,

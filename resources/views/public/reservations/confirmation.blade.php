@@ -35,8 +35,7 @@
                 <div class="table-responsive mt-4">
                     <table class="table table-sm align-middle">
                         <tbody>
-                            <tr><th>Nom</th><td>{{ $reservation->full_name }}</td></tr>
-                            <tr><th>Telephone</th><td>{{ $reservation->phone }}</td></tr>
+                            <tr><th>Nom/Pseudo</th><td>{{ $reservation->full_name }}</td></tr>
                             <tr><th>Type</th><td>{{ $reservation->type_label }}</td></tr>
                             <tr><th>Quantite</th><td>{{ $reservation->quantity }}</td></tr>
                             <tr><th>Total</th><td>{{ number_format($reservation->total_price, 2, ',', ' ') }} EUR</td></tr>

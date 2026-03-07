@@ -20,12 +20,9 @@ class PublicReservationFlowTest extends TestCase
 
         $response = $this->post(route('public.reservations.store', ['game' => $game->slug]), [
             'full_name' => 'Alex Test',
-            'phone' => '0696000000',
-            'email' => 'alex@example.test',
             'reservation_type' => Game::SLOT_MEMBER,
             'quantity' => 1,
             'notes' => 'RAS',
-            'accept_terms' => '1',
         ]);
 
         $reservation = Reservation::query()->first();
@@ -36,6 +33,8 @@ class PublicReservationFlowTest extends TestCase
         $this->assertSame('18.00', $reservation->unit_price);
         $this->assertSame('18.00', $reservation->total_price);
         $this->assertSame(Game::SLOT_MEMBER, $reservation->reservation_type);
+        $this->assertSame('-', $reservation->phone);
+        $this->assertNull($reservation->email);
     }
 
     public function test_it_rejects_reservation_when_slot_is_full(): void
@@ -49,8 +48,8 @@ class PublicReservationFlowTest extends TestCase
         Reservation::query()->create([
             'game_id' => $game->id,
             'full_name' => 'Premier Joueur',
-            'phone' => '0696111111',
-            'email' => 'first@example.test',
+            'phone' => '-',
+            'email' => null,
             'reservation_type' => Game::SLOT_MEMBER,
             'unit_price' => 18,
             'quantity' => 1,
@@ -62,11 +61,8 @@ class PublicReservationFlowTest extends TestCase
         $response = $this->from(route('public.games.show', ['game' => $game->slug]))
             ->post(route('public.reservations.store', ['game' => $game->slug]), [
                 'full_name' => 'Deuxieme Joueur',
-                'phone' => '0696222222',
-                'email' => 'second@example.test',
                 'reservation_type' => Game::SLOT_MEMBER,
                 'quantity' => 1,
-                'accept_terms' => '1',
             ]);
 
         $response->assertRedirect(route('public.games.show', ['game' => $game->slug]));
@@ -84,11 +80,8 @@ class PublicReservationFlowTest extends TestCase
 
         $this->post(route('public.reservations.store', ['game' => $game->slug]), [
             'full_name' => 'Dernier Joueur',
-            'phone' => '0696333333',
-            'email' => 'last@example.test',
             'reservation_type' => Game::SLOT_MEMBER,
             'quantity' => 1,
-            'accept_terms' => '1',
         ]);
 
         $game->refresh();

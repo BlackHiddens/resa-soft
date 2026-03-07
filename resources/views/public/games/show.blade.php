@@ -43,7 +43,8 @@
     <div class="col-12 col-lg-5">
         <div class="card public-form-card">
             <div class="card-body p-4">
-                <h2 class="h5 fw-semibold mb-3">Formulaire de reservation</h2>
+                <h2 class="h5 fw-semibold mb-1">Formulaire express</h2>
+                <p class="text-muted small mb-3">Nom ou pseudo, type de place, et c est reserve.</p>
 
                 @if (! $game->isReservable())
                     <div class="alert alert-warning mb-0">
@@ -69,22 +70,9 @@
                         </div>
 
                         <div>
-                            <label class="form-label" for="full_name">Nom et prenom</label>
+                            <label class="form-label" for="full_name">Nom ou pseudo</label>
                             <input id="full_name" name="full_name" type="text" value="{{ old('full_name') }}" class="form-control @error('full_name') is-invalid @enderror" required>
                             @error('full_name')<div class="invalid-feedback">{{ $message }}</div>@enderror
-                        </div>
-
-                        <div class="row g-3">
-                            <div class="col-12 col-md-6">
-                                <label class="form-label" for="phone">Telephone</label>
-                                <input id="phone" name="phone" type="text" value="{{ old('phone') }}" class="form-control @error('phone') is-invalid @enderror" required>
-                                @error('phone')<div class="invalid-feedback">{{ $message }}</div>@enderror
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label class="form-label" for="email">E-mail (optionnel)</label>
-                                <input id="email" name="email" type="email" value="{{ old('email') }}" class="form-control @error('email') is-invalid @enderror">
-                                @error('email')<div class="invalid-feedback">{{ $message }}</div>@enderror
-                            </div>
                         </div>
 
                         <input type="hidden" name="quantity" value="1">
@@ -93,12 +81,6 @@
                             <label class="form-label" for="notes">Commentaire (optionnel)</label>
                             <textarea id="notes" name="notes" rows="3" class="form-control @error('notes') is-invalid @enderror">{{ old('notes') }}</textarea>
                             @error('notes')<div class="invalid-feedback">{{ $message }}</div>@enderror
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input @error('accept_terms') is-invalid @enderror" type="checkbox" value="1" id="accept_terms" name="accept_terms" required>
-                            <label class="form-check-label" for="accept_terms">J accepte les conditions de reservation.</label>
-                            @error('accept_terms')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
                         </div>
 
                         <button class="btn btn-public-primary w-100" type="submit">Confirmer ma reservation</button>
