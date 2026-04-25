@@ -274,11 +274,12 @@
                                         <label for="waService" class="form-label">{{ __('home.card.svc_lbl') }}</label>
                                         <select id="waService" class="form-select">
                                             <option value="{{ __('home.card.svc_sea') }}">{{ __('home.card.svc_sea') }}</option>
-                                            <option value="{{ __('home.card.svc_boat') }}">{{ __('home.card.svc_boat') }}</option>
-                                            <option value="{{ __('home.card.svc_land') }}">{{ __('home.card.svc_land') }}</option>
+                                            <option value="{{ __('home.card.svc_brunch') }}">{{ __('home.card.svc_brunch') }}</option>
+                                            <option value="{{ __('home.card.svc_sunset') }}">{{ __('home.card.svc_sunset') }}</option>
+                                            <option value="{{ __('home.card.svc_dinner') }}">{{ __('home.card.svc_dinner') }}</option>
                                             <option value="{{ __('home.card.svc_island') }}">{{ __('home.card.svc_island') }}</option>
+                                            <option value="{{ __('home.card.svc_cooking') }}">{{ __('home.card.svc_cooking') }}</option>
                                             <option value="{{ __('home.card.svc_massage') }}">{{ __('home.card.svc_massage') }}</option>
-                                            <option value="{{ __('home.card.svc_private') }}">{{ __('home.card.svc_private') }}</option>
                                         </select>
                                     </div>
                                     <div class="col-12">
@@ -405,8 +406,8 @@
                 </div>
             </div>
 
-            <div class="row g-4">
-                {{-- Service 1 --}}
+            <div class="row g-4 justify-content-center">
+                {{-- Service 1 — Excursion en mer --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="0">
                     <article class="service-card">
                         <img src="/images/category/tour/01.jpg" class="service-card__img"
@@ -418,32 +419,44 @@
                         </div>
                     </article>
                 </div>
-                {{-- Service 2 --}}
+                {{-- Service 2 — Brunch en mer --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="80">
                     <article class="service-card">
                         <img src="/images/category/tour/03.jpg" class="service-card__img"
-                            alt="{{ __('home.services.boat_title') }}">
+                            alt="{{ __('home.services.brunch_title') }}">
                         <div class="service-card__body">
                             <div class="service-card__icon"><i class="bi bi-egg-fried"></i></div>
-                            <h5>{{ __('home.services.boat_title') }}</h5>
-                            <p>{{ __('home.services.boat_desc') }}</p>
+                            <h5>{{ __('home.services.brunch_title') }}</h5>
+                            <p>{{ __('home.services.brunch_desc') }}</p>
                         </div>
                     </article>
                 </div>
-                {{-- Service 3 --}}
+                {{-- Service 3 — Coucher de soleil en mer --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="160">
                     <article class="service-card">
-                        <img src="/images/category/directory/04.jpg" class="service-card__img"
-                            alt="{{ __('home.services.land_title') }}">
+                        <img src="/images/gallery/ta-01.jpg" class="service-card__img"
+                            alt="{{ __('home.services.sunset_title') }}">
                         <div class="service-card__body">
-                            <div class="service-card__icon"><i class="bi bi-house-heart-fill"></i></div>
-                            <h5>{{ __('home.services.land_title') }}</h5>
-                            <p>{{ __('home.services.land_desc') }}</p>
+                            <div class="service-card__icon"><i class="bi bi-sunset-fill"></i></div>
+                            <h5>{{ __('home.services.sunset_title') }}</h5>
+                            <p>{{ __('home.services.sunset_desc') }}</p>
                         </div>
                     </article>
                 </div>
-                {{-- Service 4 --}}
+                {{-- Service 4 — Dîner romantique --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="0">
+                    <article class="service-card">
+                        <img src="/images/bg/02.jpg" class="service-card__img"
+                            alt="{{ __('home.services.dinner_title') }}">
+                        <div class="service-card__body">
+                            <div class="service-card__icon"><i class="bi bi-moon-stars-fill"></i></div>
+                            <h5>{{ __('home.services.dinner_title') }}</h5>
+                            <p>{{ __('home.services.dinner_desc') }}</p>
+                        </div>
+                    </article>
+                </div>
+                {{-- Service 5 — Journée sur l'îlet --}}
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="80">
                     <article class="service-card">
                         <img src="/images/category/hotel/resort/01.jpg" class="service-card__img"
                             alt="{{ __('home.services.island_title') }}">
@@ -454,8 +467,20 @@
                         </div>
                     </article>
                 </div>
-                {{-- Service 5 --}}
-                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="80">
+                {{-- Service 6 — Cours de cuisine --}}
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="160">
+                    <article class="service-card">
+                        <img src="/images/blog/01.jpg" class="service-card__img"
+                            alt="{{ __('home.services.cooking_title') }}">
+                        <div class="service-card__body">
+                            <div class="service-card__icon"><i class="bi bi-fire"></i></div>
+                            <h5>{{ __('home.services.cooking_title') }}</h5>
+                            <p>{{ __('home.services.cooking_desc') }}</p>
+                        </div>
+                    </article>
+                </div>
+                {{-- Service 7 — Massage bien-être --}}
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="0">
                     <article class="service-card">
                         <img src="/images/about/05.jpg" class="service-card__img"
                             alt="{{ __('home.services.mass_title') }}">
@@ -463,18 +488,6 @@
                             <div class="service-card__icon"><i class="bi bi-heart-pulse-fill"></i></div>
                             <h5>{{ __('home.services.mass_title') }}</h5>
                             <p>{{ __('home.services.mass_desc') }}</p>
-                        </div>
-                    </article>
-                </div>
-                {{-- Service 6 --}}
-                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="160">
-                    <article class="service-card">
-                        <img src="/images/category/tour/05.jpg" class="service-card__img"
-                            alt="{{ __('home.services.priv_title') }}">
-                        <div class="service-card__body">
-                            <div class="service-card__icon"><i class="bi bi-stars"></i></div>
-                            <h5>{{ __('home.services.priv_title') }}</h5>
-                            <p>{{ __('home.services.priv_desc') }}</p>
                         </div>
                     </article>
                 </div>
@@ -1023,12 +1036,13 @@
                                 <select id="service_f" name="service"
                                     class="form-select @error('service') is-invalid @enderror" required>
                                     <option value="">{{ __('home.contact.svc_choose') }}</option>
-                                    <option value="Excursion en mer"   @selected(old('service')==='Excursion en mer')>{{ __('home.contact.svc_sea') }}</option>
-                                    <option value="Tapas sur bateau"   @selected(old('service')==='Tapas sur bateau')>{{ __('home.contact.svc_boat') }}</option>
-                                    <option value="Tapas sur terre"    @selected(old('service')==='Tapas sur terre')>{{ __('home.contact.svc_land') }}</option>
-                                    <option value="Privatisation îlot" @selected(old('service')==="Privatisation îlot")>{{ __('home.contact.svc_island') }}</option>
-                                    <option value="Massage"            @selected(old('service')==='Massage')>{{ __('home.contact.svc_massage') }}</option>
-                                    <option value="Moment privé"       @selected(old('service')==="Moment privé")>{{ __('home.contact.svc_private') }}</option>
+                                    <option value="Excursion en mer"      @selected(old('service')==='Excursion en mer')>{{ __('home.contact.svc_sea') }}</option>
+                                    <option value="Brunch en mer"         @selected(old('service')==='Brunch en mer')>{{ __('home.contact.svc_brunch') }}</option>
+                                    <option value="Coucher de soleil"     @selected(old('service')==='Coucher de soleil')>{{ __('home.contact.svc_sunset') }}</option>
+                                    <option value="Dîner romantique"      @selected(old('service')==="Dîner romantique")>{{ __('home.contact.svc_dinner') }}</option>
+                                    <option value="Journée sur l'îlet"    @selected(old('service')==="Journée sur l'îlet")>{{ __('home.contact.svc_island') }}</option>
+                                    <option value="Cours de cuisine"      @selected(old('service')==='Cours de cuisine')>{{ __('home.contact.svc_cooking') }}</option>
+                                    <option value="Massage bien-être"     @selected(old('service')==='Massage bien-être')>{{ __('home.contact.svc_massage') }}</option>
                                     <option value="Autre demande"      @selected(old('service')==='Autre demande')>{{ __('home.contact.svc_other') }}</option>
                                 </select>
                                 @error('service')
