@@ -410,7 +410,7 @@
                 {{-- Service 1 — Excursion en mer --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="0">
                     <article class="service-card">
-                        <img src="/images/category/tour/01.jpg" class="service-card__img"
+                        <img src="/images/28dml/snorkeling-excursion-28dml.jpg" class="service-card__img"
                             alt="{{ __('home.services.sea_title') }}">
                         <div class="service-card__body">
                             <div class="service-card__icon"><i class="bi bi-water"></i></div>
@@ -422,7 +422,7 @@
                 {{-- Service 2 — Brunch en mer --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="80">
                     <article class="service-card">
-                        <img src="/images/category/tour/03.jpg" class="service-card__img"
+                        <img src="/images/28dml/tapas-verrines-28dml.jpg" class="service-card__img"
                             alt="{{ __('home.services.brunch_title') }}">
                         <div class="service-card__body">
                             <div class="service-card__icon"><i class="bi bi-egg-fried"></i></div>
@@ -446,7 +446,7 @@
                 {{-- Service 4 — Dîner romantique --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="0">
                     <article class="service-card">
-                        <img src="/images/bg/02.jpg" class="service-card__img"
+                        <img src="/images/28dml/diner-romantique-ilet-28dml.webp" class="service-card__img"
                             alt="{{ __('home.services.dinner_title') }}">
                         <div class="service-card__body">
                             <div class="service-card__icon"><i class="bi bi-moon-stars-fill"></i></div>
@@ -458,7 +458,7 @@
                 {{-- Service 5 — Journée sur l'îlet --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="80">
                     <article class="service-card">
-                        <img src="/images/category/hotel/resort/01.jpg" class="service-card__img"
+                        <img src="/images/28dml/ilet-palmier-28dml.jpg" class="service-card__img"
                             alt="{{ __('home.services.island_title') }}">
                         <div class="service-card__body">
                             <div class="service-card__icon"><i class="bi bi-brightness-high-fill"></i></div>
@@ -470,7 +470,7 @@
                 {{-- Service 6 — Cours de cuisine --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="160">
                     <article class="service-card">
-                        <img src="/images/blog/01.jpg" class="service-card__img"
+                        <img src="/images/28dml/plat-creole-28dml.jpg" class="service-card__img"
                             alt="{{ __('home.services.cooking_title') }}">
                         <div class="service-card__body">
                             <div class="service-card__icon"><i class="bi bi-fire"></i></div>
@@ -700,6 +700,38 @@
                         data-glightbox data-gallery="sorties"
                         data-description="{{ __('home.gallery.desc_13') }}">
                         <img src="/images/gallery/ta-13.jpg" alt="Famille et amis à table sur l'îlot privatisé">
+                        <div class="gallery-grid__overlay"><i class="bi bi-zoom-in"></i></div>
+                    </a>
+                </div>
+                <div class="gallery-grid__item">
+                    <a href="/images/28dml/snorkeling-excursion-28dml.jpg"
+                        data-glightbox data-gallery="sorties"
+                        data-description="Snorkeling en eau cristalline — excursion en mer avec Marco">
+                        <img src="/images/28dml/snorkeling-excursion-28dml.jpg" alt="Snorkeling eau turquoise Martinique">
+                        <div class="gallery-grid__overlay"><i class="bi bi-zoom-in"></i></div>
+                    </a>
+                </div>
+                <div class="gallery-grid__item gallery-grid__item--wide">
+                    <a href="/images/28dml/repas-ilet-28dml.jpg"
+                        data-glightbox data-gallery="sorties"
+                        data-description="Repas sur l'îlet — pieds dans l'eau, soleil et bonne humeur avec Marco">
+                        <img src="/images/28dml/repas-ilet-28dml.jpg" alt="Repas avec Marco sur l'îlet privatisé, Martinique">
+                        <div class="gallery-grid__overlay"><i class="bi bi-zoom-in"></i></div>
+                    </a>
+                </div>
+                <div class="gallery-grid__item">
+                    <a href="/images/28dml/mangrove-martinique-28dml.jpg"
+                        data-glightbox data-gallery="sorties"
+                        data-description="La mangrove martiniquaise — paysage unique lors de nos excursions">
+                        <img src="/images/28dml/mangrove-martinique-28dml.jpg" alt="Mangrove eau transparente Martinique">
+                        <div class="gallery-grid__overlay"><i class="bi bi-zoom-in"></i></div>
+                    </a>
+                </div>
+                <div class="gallery-grid__item">
+                    <a href="/images/28dml/carpaccio-thon-28dml.jpg"
+                        data-glightbox data-gallery="sorties"
+                        data-description="Carpaccio de thon avocat citron vert — création de Caro">
+                        <img src="/images/28dml/carpaccio-thon-28dml.jpg" alt="Carpaccio thon avocat préparé par Caro">
                         <div class="gallery-grid__overlay"><i class="bi bi-zoom-in"></i></div>
                     </a>
                 </div>
