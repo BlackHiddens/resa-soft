@@ -46,4 +46,10 @@ return [
         'location' => env('CONTACT_LOCATION', 'Martinique'),
     ],
 
+    'google' => [
+        'places_api_key' => env('GOOGLE_PLACES_API_KEY'),
+        'place_id'       => env('GOOGLE_PLACE_ID'),
+        'review_url'     => env('GOOGLE_REVIEW_URL', 'https://www.google.com/search?q=28+degrés+my+life+martinique'),
+    ],
+
 ];

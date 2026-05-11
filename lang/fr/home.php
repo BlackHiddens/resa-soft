@@ -173,7 +173,7 @@ return [
     'reviews' => [
         'kicker'    => 'Témoignages',
         'title'     => 'Ce que nos invités racontent',
-        'share_cta' => 'Partagez votre avis',
+        'share_cta' => 'Partagez votre avis Google',
         'r1_quote'  => "Une expérience unique qui vous reconnecte à l'essentiel. Si vous rêvez d'une rencontre authentique avec la Martinique, montez sur ce bateau privé, partagez un repas local les pieds dans l'eau dans un cadre atypique d'île secrète.",
         'r1_author' => 'Picnic E.',
         'r1_meta'   => 'Excursion privée · Février 2026 · TripAdvisor ★ 5/5',

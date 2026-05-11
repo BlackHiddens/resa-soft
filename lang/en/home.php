@@ -173,7 +173,7 @@ return [
     'reviews' => [
         'kicker'    => 'Testimonials',
         'title'     => 'What our guests say',
-        'share_cta' => 'Share your review',
+        'share_cta' => 'Leave a Google review',
         'r1_quote'  => 'A unique experience that reconnects you to what truly matters. If you dream of an authentic encounter with Martinique, step aboard this private boat and share a local meal with your feet in the water on a secluded secret island.',
         'r1_author' => 'Picnic E.',
         'r1_meta'   => 'Private excursion · February 2026 · TripAdvisor ★ 5/5',

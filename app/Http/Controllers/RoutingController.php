@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\GoogleReviewsService;
 
 class RoutingController extends Controller
 {
-    public function root()
+    public function root(GoogleReviewsService $reviews)
     {
-        return view('site.home');
+        return view('site.home', [
+            'reviews'         => $reviews->getReviews(),
+            'googleReviewUrl' => config('services.google.review_url'),
+        ]);
     }
 
     public function privacy()
