@@ -332,8 +332,13 @@ html { scroll-behavior: smooth; }
   padding: 9rem 0 6rem;
 }
 
-/* Entrées animées du contenu hero */
-.hero-28__content > * { opacity: 0; }
+/* Entrées animées du contenu hero — uniquement les éléments ciblés */
+.hero-28__content .hero-pill,
+.hero-28__content h1,
+.hero-28__content .lead,
+.hero-28__content .hero-cta-group,
+.hero-28__content .hero-badges    { opacity: 0; }
+
 .hero-28__content .hero-pill      { animation: heroFadeUp .7s ease .2s forwards; }
 .hero-28__content h1              { animation: heroFadeUp .7s ease .4s forwards; }
 .hero-28__content .lead           { animation: heroFadeUp .7s ease .55s forwards; }

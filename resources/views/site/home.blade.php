@@ -249,7 +249,7 @@
                         <p class="lead">
                             {{ __('home.hero.lead') }}
                         </p>
-                        <div class="d-flex flex-wrap gap-3 mb-4">
+                        <div class="hero-cta-group d-flex flex-wrap gap-3 mb-4">
                             <a class="btn btn-whatsapp btn-lg" href="{{ $waLink }}"
                                 target="_blank" rel="noopener">
                                 <i class="fab fa-whatsapp me-2"></i>{{ __('home.hero.cta_wa') }}
