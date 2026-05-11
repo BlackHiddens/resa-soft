@@ -492,7 +492,7 @@
                 {{-- Service 7 — Massage bien-être --}}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="0">
                     <article class="service-card">
-                        <img src="/images/about/05.jpg" class="service-card__img"
+                        <img src="/images/28dml/massage-bien-etre-28dml.jpg" class="service-card__img"
                             alt="{{ __('home.services.mass_title') }}">
                         <div class="service-card__body">
                             <div class="service-card__icon"><i class="bi bi-heart-pulse-fill"></i></div>
