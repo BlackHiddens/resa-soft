@@ -45,6 +45,7 @@ return [
         'reviews'        => 'Avis',
         'faq'            => 'FAQ',
         'whatsapp'       => 'WhatsApp',
+        'reserve'        => 'Réserver',
         'aria_menu'      => 'Ouvrir le menu',
         'lang_label'     => 'EN',
         'lang_url'       => '/en',
@@ -121,6 +122,7 @@ return [
         'mass_title'      => 'Massage bien-être',
         'mass_desc'       => "Massage relaxant proposé par Caro, en option après votre excursion ou sur rendez-vous pour une détente complète.",
         'cta'             => 'Demander une expérience sur mesure',
+        'wa_hint'         => 'WhatsApp, notre moyen de contact privilégié',
     ],
 
     /* ── Couple section ─────────────────────────────────────────────────── */
@@ -133,6 +135,7 @@ return [
         'caro_desc'     => "Caro imagine les tapas maison, crée l'ambiance et propose des massages bien-être pour finir la journée en douceur absolue.",
         'promise_title' => 'Notre promesse',
         'promise_desc'  => "Simple, chic et chaleureux. Chaque sortie est préparée avec soin pour créer des souvenirs qui restent longtemps.",
+        'cta_book'      => 'Réserver une sortie',
         'cta_wa'        => 'Discuter avec Caro et Marco',
         'cta_insta'     => 'Instagram',
     ],
@@ -204,6 +207,7 @@ return [
         'title'       => 'Questions fréquentes',
         'contact_txt' => "Une question non listée ? Écrivez-nous directement sur WhatsApp, nous répondons en moins d'une heure.",
         'contact_cta' => 'Poser une question',
+        'wa_hint'     => 'Ou via WhatsApp — réponse en moins d\'1h',
         'q1' => 'Comment réserver une sortie ?',
         'a1' => "C'est simple : envoyez-nous un message WhatsApp avec vos dates, le nombre de personnes et l'expérience souhaitée. Nous vous confirmons rapidement et organisons tout.",
         'q2' => 'Combien de personnes par sortie ?',
@@ -249,12 +253,14 @@ return [
 
     /* ── Footer ─────────────────────────────────────────────────────────── */
     'footer' => [
-        'nav_title'  => 'Navigation',
-        'cnt_title'  => 'Contact',
-        'tagline'    => 'Excursions en mer, tapas &amp; massages en Martinique avec Caro et Marco.',
-        'contact_wa' => 'Nous écrire',
-        'rights'     => 'Tous droits réservés',
-        'made_with'  => 'Fait avec ❤️ en Martinique',
+        'nav_title'    => 'Navigation',
+        'cnt_title'    => 'Contact',
+        'tagline'      => 'Excursions en mer, tapas &amp; massages en Martinique avec Caro et Marco.',
+        'contact_wa'   => 'Nous écrire',
+        'wa_hint'      => 'WhatsApp — canal de contact privilégié',
+        'rights'       => 'Tous droits réservés',
+        'made_with'    => 'Fait avec ❤️ en Martinique',
+        'privacy_link' => 'Politique de confidentialité',
     ],
 
     /* ── Floating WA widget ─────────────────────────────────────────────── */
@@ -265,6 +271,40 @@ return [
         'placeholder' => 'Bonjour, je voudrais des infos sur une sortie en mer…',
         'send_btn'    => 'Envoyer sur WhatsApp',
         'email_pref'  => "Préférer l'email",
+    ],
+
+    /* ── Privacy / RGPD page ────────────────────────────────────────────── */
+    'privacy' => [
+        'page_title'   => 'Politique de confidentialité | 28 Degrés My Life',
+        'meta_desc'    => "Politique de confidentialité de 28 Degrés My Life. Vos données personnelles sont collectées uniquement dans le cadre de vos demandes de réservation et gérées de façon strictement privée.",
+        'title'        => 'Politique de confidentialité',
+        'subtitle'     => 'Vos données, en toute transparence.',
+        'last_updated' => 'Dernière mise à jour : mai 2025',
+        'back'         => '← Retour à l\'accueil',
+
+        's1_title'     => '1. Qui sommes-nous ?',
+        's1_body'      => "28 Degrés My Life est une activité de loisirs et d'excursions en mer basée en Martinique, gérée par Caroline et Marco. Contact : contact@28degresmylife.com — +596 696 44 36 02.",
+
+        's2_title'     => '2. Quelles données collectons-nous ?',
+        's2_body'      => "Lors de vos prises de contact (formulaire web, WhatsApp, email), nous pouvons collecter : votre prénom et nom, votre numéro de téléphone ou adresse email, la date de votre sortie souhaitée et le service sélectionné, ainsi que tout message que vous nous adressez librement.",
+
+        's3_title'     => '3. Pourquoi collectons-nous ces données ?',
+        's3_body'      => "Vos données sont utilisées exclusivement pour répondre à votre demande de réservation ou d'information, organiser votre prestation, et si vous y avez consenti, vous tenir informé(e) de nos offres. Elles ne sont jamais revendues ni transmises à des tiers à des fins commerciales extérieures.",
+
+        's4_title'     => '4. Durée de conservation',
+        's4_body'      => "Vos données sont conservées le temps nécessaire à la réalisation de la prestation et au suivi post-sortie (avis, réclamation éventuelle), dans la limite de 3 ans à compter du dernier contact.",
+
+        's5_title'     => '5. Vos droits',
+        's5_body'      => "Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à contact@28degresmylife.com.",
+
+        's6_title'     => '6. Sécurité',
+        's6_body'      => "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte ou altération.",
+
+        's7_title'     => '7. Cookies',
+        's7_body'      => "Ce site utilise uniquement des cookies techniques strictement nécessaires au bon fonctionnement (session, sécurité CSRF). Aucun cookie de tracking publicitaire n'est déposé.",
+
+        's8_title'     => '8. Contact & réclamation',
+        's8_body'      => "Pour toute question relative à vos données personnelles, écrivez-nous à contact@28degresmylife.com. En cas de désaccord, vous pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr).",
     ],
 
     /* ── JS strings (passed as PHP → JS variables) ──────────────────────── */

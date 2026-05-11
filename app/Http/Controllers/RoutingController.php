@@ -11,6 +11,18 @@ class RoutingController extends Controller
         return view('site.home');
     }
 
+    public function privacy()
+    {
+        app()->setLocale('fr');
+        return view('site.privacy');
+    }
+
+    public function privacyEn()
+    {
+        app()->setLocale('en');
+        return view('site.privacy');
+    }
+
     /**
      * second level route
      */

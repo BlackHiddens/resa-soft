@@ -45,6 +45,7 @@ return [
         'reviews'        => 'Reviews',
         'faq'            => 'FAQ',
         'whatsapp'       => 'WhatsApp',
+        'reserve'        => 'Book now',
         'aria_menu'      => 'Open menu',
         'lang_label'     => 'FR',
         'lang_url'       => '/',
@@ -121,6 +122,7 @@ return [
         'mass_title'      => 'Wellness massage',
         'mass_desc'       => 'A relaxing massage by Caro, available as an add-on after your excursion or as a standalone appointment.',
         'cta'             => 'Request a tailor-made experience',
+        'wa_hint'         => 'WhatsApp — our preferred contact channel',
     ],
 
     /* ── Couple section ─────────────────────────────────────────────────── */
@@ -133,6 +135,7 @@ return [
         'caro_desc'     => 'Caro creates the homemade tapas, sets the mood and offers wellness massages to end the day in pure bliss.',
         'promise_title' => 'Our promise',
         'promise_desc'  => 'Simple, chic and warm. Every outing is prepared with care to create memories that last.',
+        'cta_book'      => 'Book an outing',
         'cta_wa'        => 'Chat with Caro &amp; Marco',
         'cta_insta'     => 'Instagram',
     ],
@@ -204,6 +207,7 @@ return [
         'title'       => 'Frequently asked questions',
         'contact_txt' => 'A question not listed? Write to us directly on WhatsApp — we reply in under an hour.',
         'contact_cta' => 'Ask a question',
+        'wa_hint'     => 'Or via WhatsApp — reply in under 1h',
         'q1' => 'How do I book an outing?',
         'a1' => 'Simple: send us a WhatsApp message with your dates, number of people and the experience you want. We confirm quickly and organise everything.',
         'q2' => 'How many people per outing?',
@@ -249,12 +253,14 @@ return [
 
     /* ── Footer ─────────────────────────────────────────────────────────── */
     'footer' => [
-        'nav_title'  => 'Navigation',
-        'cnt_title'  => 'Contact',
-        'tagline'    => 'Sea excursions, tapas &amp; massages in Martinique with Caro and Marco.',
-        'contact_wa' => 'Message us',
-        'rights'     => 'All rights reserved',
-        'made_with'  => 'Made with ❤️ in Martinique',
+        'nav_title'    => 'Navigation',
+        'cnt_title'    => 'Contact',
+        'tagline'      => 'Sea excursions, tapas &amp; massages in Martinique with Caro and Marco.',
+        'contact_wa'   => 'Message us',
+        'wa_hint'      => 'WhatsApp — preferred contact channel',
+        'rights'       => 'All rights reserved',
+        'made_with'    => 'Made with ❤️ in Martinique',
+        'privacy_link' => 'Privacy Policy',
     ],
 
     /* ── Floating WA widget ─────────────────────────────────────────────── */
@@ -265,6 +271,40 @@ return [
         'placeholder' => 'Hello, I would like information about a sea outing…',
         'send_btn'    => 'Send on WhatsApp',
         'email_pref'  => 'Prefer email',
+    ],
+
+    /* ── Privacy / GDPR page ────────────────────────────────────────────── */
+    'privacy' => [
+        'page_title'   => 'Privacy Policy | 28 Degrees My Life',
+        'meta_desc'    => "Privacy policy of 28 Degrees My Life. Your personal data is collected solely in the context of booking enquiries and managed strictly for internal use.",
+        'title'        => 'Privacy Policy',
+        'subtitle'     => 'Your data, with full transparency.',
+        'last_updated' => 'Last updated: May 2025',
+        'back'         => '← Back to home',
+
+        's1_title'     => '1. Who are we?',
+        's1_body'      => "28 Degrees My Life is a leisure and sea excursion business based in Martinique, run by Caroline and Marco. Contact: contact@28degresmylife.com — +596 696 44 36 02.",
+
+        's2_title'     => '2. What data do we collect?',
+        's2_body'      => "When you contact us (web form, WhatsApp, email), we may collect: your first and last name, your phone number or email address, your preferred outing date and selected service, and any message you freely send us.",
+
+        's3_title'     => '3. Why do we collect this data?',
+        's3_body'      => "Your data is used exclusively to respond to your booking or information request, to organise your experience, and — if you have consented — to keep you informed of our offers. It is never sold or passed to third parties for external commercial purposes.",
+
+        's4_title'     => '4. Retention period',
+        's4_body'      => "Your data is kept for the time necessary to provide the service and for post-outing follow-up (reviews, any complaints), up to 3 years from the last contact.",
+
+        's5_title'     => '5. Your rights',
+        's5_body'      => "Under the General Data Protection Regulation (GDPR) and applicable law, you have the right to access, rectify, delete and object to the processing of your personal data. To exercise these rights, contact us at contact@28degresmylife.com.",
+
+        's6_title'     => '6. Security',
+        's6_body'      => "We implement appropriate technical and organisational measures to protect your data against unauthorised access, loss or alteration.",
+
+        's7_title'     => '7. Cookies',
+        's7_body'      => "This site uses only strictly necessary technical cookies required for proper operation (session, CSRF security). No advertising tracking cookies are set.",
+
+        's8_title'     => '8. Contact & complaints',
+        's8_body'      => "For any questions about your personal data, write to us at contact@28degresmylife.com. If you are unhappy with how your data is handled, you may lodge a complaint with the relevant supervisory authority.",
     ],
 
     /* ── JS strings (passed as PHP → JS variables) ──────────────────────── */

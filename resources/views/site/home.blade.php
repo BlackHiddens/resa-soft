@@ -198,9 +198,8 @@
                         </a>
                     </li>
                     <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a class="btn btn-whatsapp btn-sm px-3" href="{{ $waLink }}"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-whatsapp me-2"></i>{{ __('home.nav.whatsapp') }}
+                        <a class="btn btn-primary btn-sm px-3" href="#contact">
+                            {{ __('home.nav.reserve') }}
                         </a>
                     </li>
                 </ul>
@@ -220,6 +219,17 @@
              data-jarallax data-speed="0.55"
              style="background-image:url('{{ $heroBanner }}');"></div>
         <div class="hero-28__overlay"></div>
+
+        {{-- Bulles décoratives flottantes (aria-hidden) --}}
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="bubble bubble--1"></span>
+            <span class="bubble bubble--2"></span>
+            <span class="bubble bubble--3"></span>
+            <span class="bubble bubble--4"></span>
+            <span class="bubble bubble--5"></span>
+            <span class="bubble bubble--6"></span>
+            <span class="bubble bubble--7"></span>
+        </div>
 
         <div class="hero-28__content w-100">
             <div class="container">
@@ -494,10 +504,14 @@
             </div>
 
             <div class="text-center mt-5" data-aos="fade-up">
-                <a class="btn btn-whatsapp btn-lg px-5" href="{{ $waLink }}"
-                    target="_blank" rel="noopener">
-                    <i class="fab fa-whatsapp me-2"></i>{{ __('home.services.cta') }}
+                <a class="btn btn-primary btn-lg px-5" href="#contact">
+                    {{ __('home.services.cta') }}
                 </a>
+                <p class="mt-3 mb-0 small text-muted">
+                    <span class="wa-preferred-badge">
+                        <i class="fab fa-whatsapp"></i>{{ __('home.services.wa_hint') }}
+                    </span>
+                </p>
             </div>
         </div>
 
@@ -560,9 +574,8 @@
                     </div>
 
                     <div class="d-flex flex-wrap gap-3 mt-4">
-                        <a class="btn btn-whatsapp btn-lg" href="{{ $waLink }}"
-                            target="_blank" rel="noopener">
-                            <i class="fab fa-whatsapp me-2"></i>{!! __('home.couple.cta_wa') !!}
+                        <a class="btn btn-primary btn-lg" href="#contact">
+                            {{ __('home.couple.cta_book') }}
                         </a>
                         <a class="btn btn-outline-secondary btn-lg" href="{{ $instaLink }}"
                             target="_blank" rel="noopener">
@@ -615,9 +628,8 @@
             </div>
 
             <div class="text-center mt-5" data-aos="fade-up">
-                <a class="btn btn-whatsapp btn-lg px-5" href="{{ $waLink }}"
-                    target="_blank" rel="noopener">
-                    <i class="fab fa-whatsapp me-2"></i>{{ __('home.how.cta') }}
+                <a class="btn btn-light btn-lg px-5" href="#contact">
+                    {{ __('home.how.cta') }}
                 </a>
             </div>
         </div>
@@ -757,9 +769,10 @@
                     <h2 class="section-title mb-0">{{ __('home.reviews.title') }}</h2>
                 </div>
                 <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
-                    <a class="btn btn-outline-secondary btn-sm" href="{{ $waLink }}"
+                    <a class="btn btn-outline-secondary btn-sm"
+                        href="https://www.tripadvisor.fr/Attraction_Review-g147354-d21373488-Reviews-28_Degres_My_Life-Martinique.html"
                         target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp me-2"></i>{{ __('home.reviews.share_cta') }}
+                        <i class="bi bi-star-fill me-2 text-warning"></i>{{ __('home.reviews.share_cta') }}
                     </a>
                 </div>
             </div>
@@ -887,10 +900,14 @@
                     <p class="text-muted">
                         {{ __('home.faq.contact_txt') }}
                     </p>
-                    <a class="btn btn-whatsapp mt-2" href="{{ $waLink }}"
-                        target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp me-2"></i>{{ __('home.faq.contact_cta') }}
+                    <a class="btn btn-primary mt-2" href="#contact">
+                        {{ __('home.faq.contact_cta') }}
                     </a>
+                    <p class="mt-3 mb-0">
+                        <span class="wa-preferred-badge">
+                            <i class="fab fa-whatsapp"></i>{{ __('home.faq.wa_hint') }}
+                        </span>
+                    </p>
                 </div>
                 <div class="col-lg-7 offset-lg-1" data-aos="fade-left" data-aos-delay="100">
                     <div class="accordion accordion-icon accordion-border-bottom" id="faq28">
@@ -1091,7 +1108,7 @@
                                 @enderror
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-whatsapp w-100">
+                                <button type="submit" class="btn btn-primary w-100">
                                     {{ __('home.contact.submit') }}
                                 </button>
                             </div>
@@ -1154,10 +1171,9 @@
                         <i class="bi bi-envelope me-1 text-gold"></i>{{ $email }}
                     </li>
                 </ul>
-                <a class="btn btn-whatsapp btn-sm mt-1" href="{{ $waLink }}"
-                    target="_blank" rel="noopener">
-                    <i class="fab fa-whatsapp me-2"></i>{{ __('home.footer.contact_wa') }}
-                </a>
+                <span class="wa-preferred-badge mt-2 d-inline-flex">
+                    <i class="fab fa-whatsapp"></i>{{ __('home.footer.wa_hint') }}
+                </span>
             </div>
         </div>
 
@@ -1165,6 +1181,10 @@
 
         <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
             <p class="footer-copy">© {{ date('Y') }} 28 Degrés My Life — {{ __('home.footer.rights') }}</p>
+            <div class="d-flex gap-3 align-items-center">
+                <a href="{{ $locale === 'en' ? route('privacy.en') : route('privacy.fr') }}"
+                   class="footer-link">{{ __('home.footer.privacy_link') }}</a>
+            </div>
             <p class="footer-copy">{{ __('home.footer.made_with') }}</p>
         </div>
     </div>
