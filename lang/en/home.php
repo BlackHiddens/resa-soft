@@ -283,7 +283,7 @@ return [
         'back'         => '← Back to home',
 
         's1_title'     => '1. Who are we?',
-        's1_body'      => "28 Degrees My Life is a leisure and sea excursion business based in Martinique, run by Caroline and Marco. Contact: contact@28degresmylife.com — +596 696 44 36 02.",
+        's1_body'      => "28 Degrees My Life is a leisure and sea excursion business based in Martinique, run by Caroline and Marco. Contact: macaro972@gmail.com — +596 696 44 36 02.",
 
         's2_title'     => '2. What data do we collect?',
         's2_body'      => "When you contact us (web form, WhatsApp, email), we may collect: your first and last name, your phone number or email address, your preferred outing date and selected service, and any message you freely send us.",
@@ -295,7 +295,7 @@ return [
         's4_body'      => "Your data is kept for the time necessary to provide the service and for post-outing follow-up (reviews, any complaints), up to 3 years from the last contact.",
 
         's5_title'     => '5. Your rights',
-        's5_body'      => "Under the General Data Protection Regulation (GDPR) and applicable law, you have the right to access, rectify, delete and object to the processing of your personal data. To exercise these rights, contact us at contact@28degresmylife.com.",
+        's5_body'      => "Under the General Data Protection Regulation (GDPR) and applicable law, you have the right to access, rectify, delete and object to the processing of your personal data. To exercise these rights, contact us at macaro972@gmail.com.",
 
         's6_title'     => '6. Security',
         's6_body'      => "We implement appropriate technical and organisational measures to protect your data against unauthorised access, loss or alteration.",
@@ -304,7 +304,7 @@ return [
         's7_body'      => "This site uses only strictly necessary technical cookies required for proper operation (session, CSRF security). No advertising tracking cookies are set.",
 
         's8_title'     => '8. Contact & complaints',
-        's8_body'      => "For any questions about your personal data, write to us at contact@28degresmylife.com. If you are unhappy with how your data is handled, you may lodge a complaint with the relevant supervisory authority.",
+        's8_body'      => "For any questions about your personal data, write to us at macaro972@gmail.com. If you are unhappy with how your data is handled, you may lodge a complaint with the relevant supervisory authority.",
     ],
 
     /* ── JS strings (passed as PHP → JS variables) ──────────────────────── */

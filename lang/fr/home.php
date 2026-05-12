@@ -283,7 +283,7 @@ return [
         'back'         => '← Retour à l\'accueil',
 
         's1_title'     => '1. Qui sommes-nous ?',
-        's1_body'      => "28 Degrés My Life est une activité de loisirs et d'excursions en mer basée en Martinique, gérée par Caroline et Marco. Contact : contact@28degresmylife.com — +596 696 44 36 02.",
+        's1_body'      => "28 Degrés My Life est une activité de loisirs et d'excursions en mer basée en Martinique, gérée par Caroline et Marco. Contact : macaro972@gmail.com — +596 696 44 36 02.",
 
         's2_title'     => '2. Quelles données collectons-nous ?',
         's2_body'      => "Lors de vos prises de contact (formulaire web, WhatsApp, email), nous pouvons collecter : votre prénom et nom, votre numéro de téléphone ou adresse email, la date de votre sortie souhaitée et le service sélectionné, ainsi que tout message que vous nous adressez librement.",
@@ -295,7 +295,7 @@ return [
         's4_body'      => "Vos données sont conservées le temps nécessaire à la réalisation de la prestation et au suivi post-sortie (avis, réclamation éventuelle), dans la limite de 3 ans à compter du dernier contact.",
 
         's5_title'     => '5. Vos droits',
-        's5_body'      => "Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à contact@28degresmylife.com.",
+        's5_body'      => "Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à macaro972@gmail.com.",
 
         's6_title'     => '6. Sécurité',
         's6_body'      => "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte ou altération.",
@@ -304,7 +304,7 @@ return [
         's7_body'      => "Ce site utilise uniquement des cookies techniques strictement nécessaires au bon fonctionnement (session, sécurité CSRF). Aucun cookie de tracking publicitaire n'est déposé.",
 
         's8_title'     => '8. Contact & réclamation',
-        's8_body'      => "Pour toute question relative à vos données personnelles, écrivez-nous à contact@28degresmylife.com. En cas de désaccord, vous pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr).",
+        's8_body'      => "Pour toute question relative à vos données personnelles, écrivez-nous à macaro972@gmail.com. En cas de désaccord, vous pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr).",
     ],
 
     /* ── JS strings (passed as PHP → JS variables) ──────────────────────── */

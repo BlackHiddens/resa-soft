@@ -41,7 +41,7 @@ return [
     ],
 
     'contact' => [
-        'email' => env('CONTACT_EMAIL', 'contact@28degresmylife.com'),
+        'email' => env('CONTACT_EMAIL', 'macaro972@gmail.com'),
         'phone' => env('CONTACT_PHONE', '+596 696 00 00 00'),
         'location' => env('CONTACT_LOCATION', 'Martinique'),
     ],
