@@ -172,10 +172,10 @@ return [
 
     /* ── Guarantee strip ────────────────────────────────────────────────── */
     'guarantee' => [
-        'meteo'   => 'Bad weather → free rescheduling',
+        'meteo'   => 'Martinique · sunshine almost year-round',
         'groupe'  => 'Max 8 guests · intimate group',
         'skipper' => 'Licensed skipper · safety on board',
-        'reponse' => 'WhatsApp reply within 24h',
+        'reponse' => 'Quick reply as soon as available',
     ],
 
     /* ── Reviews section ────────────────────────────────────────────────── */

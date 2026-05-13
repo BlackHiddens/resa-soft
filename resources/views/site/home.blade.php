@@ -643,7 +643,7 @@
             <div class="row g-3 row-cols-2 row-cols-md-4 justify-content-center text-center">
                 <div class="col">
                     <div class="guarantee-strip__item">
-                        <i class="bi bi-cloud-sun-fill guarantee-strip__icon"></i>
+                        <i class="bi bi-sun-fill guarantee-strip__icon"></i>
                         <p class="guarantee-strip__label">{{ __('home.guarantee.meteo') }}</p>
                     </div>
                 </div>
@@ -655,7 +655,7 @@
                 </div>
                 <div class="col">
                     <div class="guarantee-strip__item">
-                        <i class="bi bi-shield-check-fill guarantee-strip__icon"></i>
+                        <i class="bi bi-anchor guarantee-strip__icon"></i>
                         <p class="guarantee-strip__label">{{ __('home.guarantee.skipper') }}</p>
                     </div>
                 </div>

@@ -172,10 +172,10 @@ return [
 
     /* ── Guarantee strip ────────────────────────────────────────────────── */
     'guarantee' => [
-        'meteo'   => 'Météo défavorable → report sans frais',
+        'meteo'   => 'Martinique · soleil quasi toute l\'année',
         'groupe'  => 'Max 8 pers. · petit groupe garanti',
         'skipper' => 'Skipper diplômé · sécurité à bord',
-        'reponse' => 'Réponse WhatsApp sous 24h',
+        'reponse' => 'Réponse rapide dès que disponible',
     ],
 
     /* ── Reviews section ────────────────────────────────────────────────── */
