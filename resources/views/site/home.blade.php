@@ -655,7 +655,7 @@
                 </div>
                 <div class="col">
                     <div class="guarantee-strip__item">
-                        <i class="bi bi-anchor guarantee-strip__icon"></i>
+                        <i class="bi bi-compass-fill guarantee-strip__icon"></i>
                         <p class="guarantee-strip__label">{{ __('home.guarantee.skipper') }}</p>
                     </div>
                 </div>
