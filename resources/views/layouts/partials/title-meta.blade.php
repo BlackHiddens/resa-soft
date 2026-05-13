@@ -8,8 +8,9 @@
     content="@yield('meta_description', 'Excursions en mer, tapas et moments chill en Martinique avec Caro et Marco.')">
 
 <!-- Favicon -->
-<link rel="icon" type="image/jpeg" href="/images/logo-28degres.jpg">
-<link rel="apple-touch-icon" href="/images/logo-28degres.jpg">
+<link rel="icon" type="image/x-icon"  href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
