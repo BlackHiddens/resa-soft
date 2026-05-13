@@ -90,7 +90,7 @@ return [
     'proof' => [
         'reviews'  => '+200 familles et amis ravis',
         'private'  => 'Expérience 100 % privatisée',
-        'response' => "Réponse en moins d'1h",
+        'response' => 'Réponse rapide dès que disponible',
         'local'    => 'Couple local martiniquais',
     ],
 
@@ -216,7 +216,7 @@ return [
         'title'       => 'Questions fréquentes',
         'contact_txt' => "Une question non listée ? Écrivez-nous directement sur WhatsApp, nous répondons en moins d'une heure.",
         'contact_cta' => 'Poser une question',
-        'wa_hint'     => 'Ou via WhatsApp — réponse en moins d\'1h',
+        'wa_hint'     => 'Ou via WhatsApp — réponse rapide',
         'q1' => 'Comment réserver une sortie ?',
         'a1' => "C'est simple : envoyez-nous un message WhatsApp avec vos dates, le nombre de personnes et l'expérience souhaitée. Nous vous confirmons rapidement et organisons tout.",
         'q2' => 'Combien de personnes par sortie ?',
@@ -238,7 +238,7 @@ return [
         'lead'        => 'WhatsApp pour une réponse immédiate, email pour les demandes détaillées. Caro ou Marco vous répondent en personne.',
         'btn_wa'      => 'Ouvrir WhatsApp',
         'btn_email'   => 'Envoyer un email',
-        'wa_priority' => 'Canal prioritaire — réponse &lt; 1h',
+        'wa_priority' => 'Canal prioritaire — réponse rapide',
         'form_title'  => 'Formulaire de contact',
         'form_lead'   => "Préférez-vous l'email ? Remplissez ce formulaire, nous revenons vers vous vite.",
         'success'     => 'Merci, votre message a bien été envoyé. Caro et Marco vous répondent rapidement.',
