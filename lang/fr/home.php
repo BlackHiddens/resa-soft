@@ -166,7 +166,16 @@ return [
         'desc_03'   => "Table les pieds dans l'eau — le repas avec la mer comme décor",
         'desc_11'   => 'Le festin de tapas de Caro — généreux, frais, fait maison',
         'desc_13'   => 'Un groupe, une table sur l\'îlot, des sourires — voilà 28 Degrés My Life',
-        'insta_cta' => 'Voir plus sur Instagram',
+        'insta_cta'    => 'Voir plus sur Instagram',
+        'reserve_cta'  => 'Réserver cette expérience',
+    ],
+
+    /* ── Guarantee strip ────────────────────────────────────────────────── */
+    'guarantee' => [
+        'meteo'   => 'Météo défavorable → report sans frais',
+        'groupe'  => 'Max 8 pers. · petit groupe garanti',
+        'skipper' => 'Skipper diplômé · sécurité à bord',
+        'reponse' => 'Réponse WhatsApp sous 24h',
     ],
 
     /* ── Reviews section ────────────────────────────────────────────────── */

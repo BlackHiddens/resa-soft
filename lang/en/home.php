@@ -166,7 +166,16 @@ return [
         'desc_03'   => 'Dining with your feet in the water — the sea as your backdrop',
         'desc_11'   => "Caro's tapas feast — generous, fresh, homemade",
         'desc_13'   => "A group, a table on the island, smiles all round — that's 28 Degrees My Life",
-        'insta_cta' => 'See more on Instagram',
+        'insta_cta'   => 'See more on Instagram',
+        'reserve_cta' => 'Book this experience',
+    ],
+
+    /* ── Guarantee strip ────────────────────────────────────────────────── */
+    'guarantee' => [
+        'meteo'   => 'Bad weather → free rescheduling',
+        'groupe'  => 'Max 8 guests · intimate group',
+        'skipper' => 'Licensed skipper · safety on board',
+        'reponse' => 'WhatsApp reply within 24h',
     ],
 
     /* ── Reviews section ────────────────────────────────────────────────── */

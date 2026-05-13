@@ -636,6 +636,90 @@
     </section>
 
     {{-- ══════════════════════════════════════════════════════════
+         RÉASSURANCE — bande garanties
+    ══════════════════════════════════════════════════════════ --}}
+    <div class="guarantee-strip" data-aos="fade-up">
+        <div class="container">
+            <div class="row g-3 row-cols-2 row-cols-md-4 justify-content-center text-center">
+                <div class="col">
+                    <div class="guarantee-strip__item">
+                        <i class="bi bi-cloud-sun-fill guarantee-strip__icon"></i>
+                        <p class="guarantee-strip__label">{{ __('home.guarantee.meteo') }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="guarantee-strip__item">
+                        <i class="bi bi-people-fill guarantee-strip__icon"></i>
+                        <p class="guarantee-strip__label">{{ __('home.guarantee.groupe') }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="guarantee-strip__item">
+                        <i class="bi bi-shield-check-fill guarantee-strip__icon"></i>
+                        <p class="guarantee-strip__label">{{ __('home.guarantee.skipper') }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="guarantee-strip__item">
+                        <i class="bi bi-chat-dots-fill guarantee-strip__icon"></i>
+                        <p class="guarantee-strip__label">{{ __('home.guarantee.reponse') }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- ══════════════════════════════════════════════════════════
+         AVIS — Splide slider
+    ══════════════════════════════════════════════════════════ --}}
+    <section id="avis" class="reviews-section">
+        <div class="container">
+            <div class="row mb-5 align-items-end" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <span class="section-kicker">{{ __('home.reviews.kicker') }}</span>
+                    <h2 class="section-title mb-0">{{ __('home.reviews.title') }}</h2>
+                </div>
+                <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
+                    <a class="btn btn-outline-secondary btn-sm"
+                        href="{{ $googleReviewUrl }}"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 48 48" aria-hidden="true">
+                            <path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.2l6.7-6.7C35.8 2.5 30.2 0 24 0 14.6 0 6.6 5.4 2.6 13.3l7.8 6C12.4 13 17.8 9.5 24 9.5z"/>
+                            <path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17z"/>
+                            <path fill="#FBBC05" d="M10.4 28.7c-.7-2-1-4.1-1-6.2s.4-4.3 1-6.2l-7.8-6C.9 13.5 0 18.6 0 24s.9 10.5 2.6 13.7l7.8-6z"/>
+                            <path fill="#34A853" d="M24 48c6.2 0 11.4-2 15.2-5.5l-7.5-5.8c-2 1.4-4.6 2.2-7.7 2.2-6.2 0-11.5-4.2-13.4-9.8l-7.8 6C6.6 42.6 14.6 48 24 48z"/>
+                        </svg>{{ __('home.reviews.share_cta') }}
+                    </a>
+                </div>
+            </div>
+
+            <div class="splide-reviews splide" aria-label="{{ __('home.reviews.title') }}">
+                <div class="splide__track pb-4">
+                    <ul class="splide__list">
+                        @foreach($reviews as $review)
+                        <li class="splide__slide px-2">
+                            <div class="review-card">
+                                <div class="review-card__stars">
+                                    @for($i = 0; $i < ($review['rating'] ?? 5); $i++)★@endfor
+                                </div>
+                                <p class="review-card__quote">{{ $review['quote'] }}</p>
+                                <div class="review-card__author">
+                                    <div class="review-card__avatar">{{ $review['avatar'] }}</div>
+                                    <div>
+                                        <h6>{{ $review['author'] }}</h6>
+                                        <small>{{ $review['meta'] }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- ══════════════════════════════════════════════════════════
          GALERIE — GLightbox
     ══════════════════════════════════════════════════════════ --}}
     <section id="galerie" class="gallery-section">
@@ -749,61 +833,14 @@
                 </div>
             </div>
 
-            <div class="text-center mt-4" data-aos="fade-up">
+            <div class="d-flex gap-3 flex-wrap justify-content-center mt-5" data-aos="fade-up">
+                <a class="btn btn-primary btn-lg px-5" href="#contact">
+                    {{ __('home.gallery.reserve_cta') }}
+                </a>
                 <a class="btn btn-outline-secondary" href="{{ $instaLink }}"
                     target="_blank" rel="noopener">
                     <i class="fab fa-instagram me-2"></i>{{ __('home.gallery.insta_cta') }}
                 </a>
-            </div>
-        </div>
-    </section>
-
-    {{-- ══════════════════════════════════════════════════════════
-         AVIS — Splide slider
-    ══════════════════════════════════════════════════════════ --}}
-    <section id="avis" class="reviews-section">
-        <div class="container">
-            <div class="row mb-5 align-items-end" data-aos="fade-up">
-                <div class="col-lg-6">
-                    <span class="section-kicker">{{ __('home.reviews.kicker') }}</span>
-                    <h2 class="section-title mb-0">{{ __('home.reviews.title') }}</h2>
-                </div>
-                <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
-                    <a class="btn btn-outline-secondary btn-sm"
-                        href="{{ $googleReviewUrl }}"
-                        target="_blank" rel="noopener noreferrer">
-                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 48 48" aria-hidden="true">
-                            <path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.2l6.7-6.7C35.8 2.5 30.2 0 24 0 14.6 0 6.6 5.4 2.6 13.3l7.8 6C12.4 13 17.8 9.5 24 9.5z"/>
-                            <path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17z"/>
-                            <path fill="#FBBC05" d="M10.4 28.7c-.7-2-1-4.1-1-6.2s.4-4.3 1-6.2l-7.8-6C.9 13.5 0 18.6 0 24s.9 10.5 2.6 13.7l7.8-6z"/>
-                            <path fill="#34A853" d="M24 48c6.2 0 11.4-2 15.2-5.5l-7.5-5.8c-2 1.4-4.6 2.2-7.7 2.2-6.2 0-11.5-4.2-13.4-9.8l-7.8 6C6.6 42.6 14.6 48 24 48z"/>
-                        </svg>{{ __('home.reviews.share_cta') }}
-                    </a>
-                </div>
-            </div>
-
-            <div class="splide-reviews splide" aria-label="{{ __('home.reviews.title') }}">
-                <div class="splide__track pb-4">
-                    <ul class="splide__list">
-                        @foreach($reviews as $review)
-                        <li class="splide__slide px-2">
-                            <div class="review-card">
-                                <div class="review-card__stars">
-                                    @for($i = 0; $i < ($review['rating'] ?? 5); $i++)★@endfor
-                                </div>
-                                <p class="review-card__quote">{{ $review['quote'] }}</p>
-                                <div class="review-card__author">
-                                    <div class="review-card__avatar">{{ $review['avatar'] }}</div>
-                                    <div>
-                                        <h6>{{ $review['author'] }}</h6>
-                                        <small>{{ $review['meta'] }}</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
